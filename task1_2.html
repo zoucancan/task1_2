@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .changeColor{
+      color:#666;
+    }
+    .suojin{
+      text-indent:2em;
+    }
+    ul li{
+      list-style: none;
+      line-height: 40px;
+    }
+    .box{
+      border:1px solid black;
+      width: 220px;
+    }
+    img{
+      margin: 5px 10px 10px;
+    }
+    .center{
+      text-align: center;
+    }
+    div{
+      font-weight: bold;
+      line-height: 30px;
+    }
+    #ccc{
+      background-color: #ccc;
+    }
+    th{
+      background-color: red;
+    }
+    .submit{
+      width: 100%;
+      background-color: blue;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>文章一级标题</h1>
+  <h2 class="changeColor">文章二级标题</h2>
+  <p class="changeColor">文章作者  文章发表时间</p>
+  <span class="suojin">aaaaaaaaaa<em>aaaaa</em>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br/></span>
+  <img src="http://p2.so.qhmsg.com/t018b83cc648853f307.jpg" alt="">
+  <span class="suojin">aa<strong>aaaa</strong>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaa<a href="#">这儿有一个链接</a>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+  <ul>
+    <li>列表选项一</li>
+    <li>列表选项二</li>
+    <li>列表选项三</li>
+  </ul>
+  <h1>图片</h1>
+  <figure class="box">
+  <p class="center">好看的图片</p>
+  <img src="http://p2.so.qhmsg.com/t018b83cc648853f307.jpg" alt="">
+  </figure>
+  <figure class="box">
+  <p class="center">好看的图片</p>
+  <img src="http://p2.so.qhmsg.com/t018b83cc648853f307.jpg" alt="">
+  </figure>
+  <figure class="box">
+  <p class="center">好看的图片</p>
+  <img src="http://p2.so.qhmsg.com/t018b83cc648853f307.jpg" alt="">
+  </figure>
+  <h1>最后一篇文章一级标题</h1>
+  <h2 class="changeColor">文章二级标题</h2>
+  <span class="changeColor">文章作者  文章发表时间</span>
+  <div>
+  <ol>
+    <li>排名1</li>
+    <li>排名2</li>
+    <li>排名3</li>
+  </ol>
+  </div>
+  <p>下面是个表格</p>
+  <table border="1px solid">
+    <tbody>
+    <tr>
+      <th>表头</th>
+      <th>表头</th>
+      <th>表头</th>
+    </tr>
+    <tr>
+      <td>表内容单元格</td>
+      <td>表内容单元格</td>
+      <td><a href="#">操作</a></td>
+    </tr>
+    <tr>
+      <td>表内容单元格</td>
+      <td>表内容单元格</td>
+      <td><a href="#">操作</a></td>
+    </tr>
+    <tr>
+      <td>表内容单元格</td>
+      <td>表内容单元格</td>
+      <td><a href="#">操作</a></td>
+    </tr>
+    <tr>
+      <td>表内容单元格</td>
+      <td>表内容单元格</td>
+      <td><a href="#">操作</a></td>
+    </tr>
+    <tr id="ccc">
+      <td>总计</td>
+      <td colspan="2">1000</td>
+    </tr>
+    </tbody>
+  </table>
+  <h1>接下来制作表单</h1>
+  <form action="">
+    <span>请输入邮箱地址：</span>
+    <input type="text" name="address" value="这是一个文本输入框"/>
+    <br/>
+    <span>请输入密码：</span>
+    <input type="password" name="password" value="这也是一个文本输入框"/>
+    <br/>
+    <span>性别：</span>
+    <input type="radio" checked="checked" />
+    <lable for="male">男</lable>
+    <input type="radio"  />
+    <lable for="female">女</lable>
+    <br/>
+    <span>城市：</span>
+    <select>
+      <option value="上海">上海</option>
+      <option value="北京" selected="selected">北京</option>
+      <option value="广州">广州</option>
+      <option value="深圳">深圳</option>
+    </select>
+    <br/>
+    <span>爱好：</span>
+    <input type="checkbox" />运动
+    <input type="checkbox" />艺术
+    <input type="checkbox" />科学
+    <br/>
+    <span>个人描述：</span>
+    <textarea name="" id="" cols="30" rows="5" placeholder="这是一个多行文本"></textarea>
+    <input type="submit" value="确认提交" class="submit"/>
+
+
+  </form>
+</body>
+</html>
